@@ -1,5 +1,6 @@
+/*Lugar de estilos de la página*/
 
-        body {
+body {
             background-color: #f3eeee;
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -35,4 +36,7 @@
             border-radius: 10px;
             justify-content: center;
         }
+        .bg-primary {
+    border-radius: 0 !important;
+}
 
