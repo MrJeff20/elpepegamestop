@@ -7,6 +7,6 @@ function logear(){
         window.location.href = 'index.html';
     }
     else{
-        alert("datos incorrectos")
+        alert("Datos incorrectos, favor ingresar nuevamente.")
     }
 }
