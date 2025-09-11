@@ -32,23 +32,24 @@
         </ul>
     </div>
     <div class="container mb-4">
-        <form>
+        <form id="formularioContacto">
+            <div id="alertaFormulario" class="alert d-none"></div>
             <!---Recuadro de nombre en el contacto----->
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                <input type="text" class="form-control" id="nombre" name="nombre" data-obligatorio="true" data-nombre="Nombre" placeholder="Tu nombre">
             </div>
             <!---Recuadro de correo en el contacto----->
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="correo" placeholder="tu@email.com">
+                <input type="email" class="form-control" id="correo" name="correo" data-obligatorio="true" data-nombre="Correo" placeholder="tu@email.com">
             </div>
             <!---Recuadro de mensaje en el contacto----->
             <div class="mb-3">
                 <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                <textarea class="form-control" id="mensaje" name="mensaje" data-obligatorio="true" data-nombre="Mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" id="btnProcesar">Enviar</button>
         </form>
     </div>
     <div class="surprise">
@@ -57,5 +58,6 @@
     <footer style="margin-top: 20px; font-size: 12px; color: #777;">
         <p>© 2025 N.W.A, Equipo Fundador: Jeferson Carbonell | Roberto Jara | Dr. Dre | Ice Cube. Todos los derechos reservados.</p>
     </footer>
+    <script src="assets/funciones.js"></script>
 </body>
 </html>
