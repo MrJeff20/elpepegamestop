@@ -165,10 +165,16 @@ ul, ol {
     display:block;
 }
 
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#header:hover {
+    z-index: 100;
 }
 
 
@@ -253,33 +259,40 @@ ul, ol {
     width: 100%;
     transition: .5s ease;
 }
-.mostrador.fila{
+.mostrador .fila{
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    overflow: visible; /* Permite que los hijos se expandan fuera del contenedor */
 }
-.mostrador .fila.item_juego{
-    max-width: 210px;
+.mostrador .fila .item_juego {
+    max-width: 190px;
     padding: 30px;
-    height: 250px;
+    height: 300px;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 5px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: .3s;
+    position: relative; /* Necesario para z-index */
+    z-index: 1;
 }
-.mostrador .fila.item_juego:hover{
-    background-color: #d00a0a;}
-.mostrador .fila.item_juego img{
+.mostrador .fila .item_juego:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+    z-index: 10; /* Trae el producto al frente */
+    transform-origin: center center;
+}
+.mostrador .fila .item_juego img {
     width: 100%;
     margin: 30px 0;
 }
-.mostrador .fila.item_juego .descripcion{
+.mostrador .fila .item_juego .descripcion {
     color: #707070;
     font-weight: bold;
 }
-.mostrador .fila.item_juego .precio{
-    color: #d00a0a;
+.mostrador .fila .item_juego .precio {
+    color: #171616;
     font-weight: bold;
     font-size: 20px;
 }
