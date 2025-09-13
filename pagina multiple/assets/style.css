@@ -188,7 +188,7 @@ ul, ol {
 .login-form{
     width: 350px;
     height: 400px;
-    background-color: brown;
+    background-color: #066fd8;
     padding-top: 20px;
     margin: 50px auto; /* Centra el formulario horizontalmente */
     border-radius: 20px;
